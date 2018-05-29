@@ -1,0 +1,101 @@
+#container {
+height: 9000px;
+width: 99%;
+margin-left: auto;
+margin-right: auto;
+/* need both left and right margin property if using auto */
+background-color: black;
+border-radius: 100px;
+}
+/* how my background container will look */
+
+#header {
+float: left;
+clear: left;
+width: 96.7%;
+background-color: silver;
+padding: 10px;
+position: fixed;
+}
+/* whatever goes into my header/menu will be edited with this */
+/* my header has it's position value set to "fixed" so it will move along with the screen as the user scrolls up and down */
+
+.textarea {
+height: 7000px;
+float: left;
+clear: left;
+margin-left: 15%;
+width: 70%;
+background-color: gray;
+color: black;
+padding: 10px;
+margin-top: 150px;
+}
+/* how my textarea will look */
+
+.submenu {
+height: 30px;
+background-color: pink;
+float: left;
+width: 150px;
+border-radius: 10px; 
+padding: 10px; 
+margin-left: 115px;
+clear: right;
+}
+/* how each submenu will look */
+
+.submenu:hover{
+height: 30px;
+background-color: grey;
+float: left;
+width: 150px;
+border-radius: 10px; 
+padding: 10px; 
+margin-left: 115px;
+clear: right;
+}
+/* if my mouse is hovering over the above div, this will make the div look different */
+
+h1 {
+text-align: center;
+margin-top: 30px;
+}
+/* how any h1 text will look */
+
+h2 {
+text-align: center;
+}
+/* put h2 here for now, if I ever use it, I'll style it here */
+
+h3 {
+text-align: center;
+}
+/* makes all my heading 3 text align in the center of it's parent */
+
+
+p {
+text-align: center;
+margin-top: 5px;
+}
+/* added some paragraph things so I can edit them later if necessary */
+
+img {
+width: 24.6%;
+}
+/* image editing done here */
+
+html {
+background-color: pink;
+}
+/* the styling for anything that isn't floating will be done here */
+
+div {
+border-radius: 10px;
+}
+/* every single one of my divs will have this specific property and it's value */
+
+a {
+text-align: center;
+}
+/* editing any links */

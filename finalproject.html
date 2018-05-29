@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> WordGuesser	</title>
+<link rel="stylesheet" type="text/css" href="fp.css">
+	<script type="text/javascript">
+	var Onelw = ["a", "i" ,"o"];
+
+	var	Twolw = ["be", "go", "hi", "it"];
+
+	var	Threelw = ["job", "jab", "jaw", "jug", "wax", "jet", "tax", "gym", "ace", "act", "add", "age", "aid", "aim", "all", "and", "bus", "boy", "but", "car", "cat", "cap"];
+
+	var	Fourlw = ["able", "acid", "daft", "aged", "aids", "akin", "aloe", "also", "baby", "back", "bake", "bald", "balm", "bane", "bare", "barn", "cafe", "cage", "cake", "card", "cape", "care", "cash", "dads"];
+
+	var	Fivelw = ["abide", "above", "abyss", "acorn", "actor", "basin", "basis", "below", "books", "caper", "camel", "cameo", "canal","candy", "defog", "decks", "decor", "dinar", "diner", "dimes"];
+
+	var	Sixlw = ["object","aboard", "abound", "absent", "barrel", "barter", "bender", "biking", "bigger", "canyon"]; 	
+
+	function OneWord() {
+		Onelw.toString();
+	 	document.getElementById("word-selector").innerHTML = Onelw;
+	}
+	function TwoWord() {
+		Twolw.toString();
+	  	document.getElementById("word-selector").innerHTML = Twolw;
+	}
+	function ThreeWord() {
+		Threelw.toString();
+	   	document.getElementById("word-selector").innerHTML = Threelw;
+	}
+	function FourWord() {
+		Fourlw.toString();
+	   	document.getElementById("word-selector").innerHTML = Fourlw;
+	}
+	function FiveWord() {
+		Fivelw.toString();
+	  	document.getElementById("word-selector").innerHTML = Fivelw;
+	}
+	function SixWord() {
+		Sixlw.toString();
+	   	document.getElementById("word-selector").innerHTML = Sixlw;
+	}
+
+	var testing = [];
+	function guess() {
+		testing.push(" " + document.getElementById("guess").value);
+		document.getElementById("word-selector").innerHTML = testing;
+	}
+
+	</script> 
+</head>
+
+<!-- resources: -->
+<!-- //https://www.w3schools.com/jsref/dom_obj_event.asp -->
+
+<body>
+<center>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Underline_font_awesome.svg/1024px-Underline_font_awesome.svg.png" height="150">
+	</img>
+</center>
+<center>
+	<button onclick="OneWord()" id="selectors"> 1 letter words </button> 
+	<button onclick="TwoWord()" id="selectors"> 2 letter words </button>
+	<button onclick="ThreeWord()" id="selectors"> 3 letter words </button>
+	<button onclick="FourWord()" id="selectors"> 4 letter words </button>
+	<button onclick="FiveWord()" id="selectors"> 5 letter words </button>
+	<button onclick="SixWord()" id="selectors"> 6 letter words </button>	
+</center>
+<br>
+<center>
+	<input type="text" id="guess" onclick="this.value=''"()>
+	<br>
+	<br>
+	<button onclick="guess()" id="GB"> 
+		Guess 
+	</button>
+</center>
+<br>	
+	<p id="word-selector">
+	</p>
+</body>
+<html>
